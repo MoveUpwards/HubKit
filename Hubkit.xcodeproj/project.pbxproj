@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3337162903DCB3D16FA62A08 /* Pods_Hubkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBD0EE81F92FC3C4CB288AC /* Pods_Hubkit.framework */; };
+		3746092A8E87C96C78BD13F5 /* Pods_HubkitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843AC70168D361CFD2506044 /* Pods_HubkitTests.framework */; };
 		3D9C43242274629B000A6585 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C43232274629B000A6585 /* AppDelegate.swift */; };
 		3D9C43262274629B000A6585 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C43252274629B000A6585 /* ViewController.swift */; };
 		3D9C432B2274629C000A6585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C432A2274629C000A6585 /* Assets.xcassets */; };
@@ -31,6 +32,8 @@
 		F3D7C38B22B37D6C0091B829 /* HKJwtToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7C37B22B37D6C0091B829 /* HKJwtToken.swift */; };
 		F3D7C38C22B37D6C0091B829 /* HKApiKeyToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7C37C22B37D6C0091B829 /* HKApiKeyToken.swift */; };
 		F3D7C38D22B37D6C0091B829 /* HKFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7C37D22B37D6C0091B829 /* HKFile.swift */; };
+		F3D7C39722B38EAC0091B829 /* Hubkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* Hubkit.framework */; };
+		F3D7C39E22B391250091B829 /* HubkitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7C39422B38EAC0091B829 /* HubkitTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 3D9C428F22745894000A6585;
 			remoteInfo = "Hubkit-iOS";
+		};
+		F3D7C39822B38EAC0091B829 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9C428722745894000A6585 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D9C428F22745894000A6585;
+			remoteInfo = Hubkit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -67,7 +77,6 @@
 		3D9C42D422745B48000A6585 /* Hubkit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Hubkit.podspec; sourceTree = SOURCE_ROOT; };
 		3D9C42D522745B48000A6585 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		3D9C42D622745C9D000A6585 /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Fastfile; path = fastlane/Fastfile; sourceTree = SOURCE_ROOT; };
-		3D9C42D722745CDE000A6585 /* HubkitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubkitTests.swift; sourceTree = "<group>"; };
 		3D9C42D822745DAF000A6585 /* .jazzy.yaml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .jazzy.yaml; sourceTree = SOURCE_ROOT; };
 		3D9C42D922745DAF000A6585 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		3D9C42DA22745DB0000A6585 /* .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".swift-version"; sourceTree = SOURCE_ROOT; };
@@ -80,8 +89,11 @@
 		3D9C432D2274629C000A6585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D9C432F2274629C000A6585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DB91AC4229AC263002668DA /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = SOURCE_ROOT; };
+		3F8DEBEBCEC008A6B640C207 /* Pods-HubkitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HubkitTests.release.xcconfig"; path = "Target Support Files/Pods-HubkitTests/Pods-HubkitTests.release.xcconfig"; sourceTree = "<group>"; };
 		7D6E031355266CE4B50EBB8A /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		843AC70168D361CFD2506044 /* Pods_HubkitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HubkitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		917C533E2CFE0CF4A3AB55AD /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C55105533559C5FD57A9EE78 /* Pods-HubkitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HubkitTests.debug.xcconfig"; path = "Target Support Files/Pods-HubkitTests/Pods-HubkitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DBBD0EE81F92FC3C4CB288AC /* Pods_Hubkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hubkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE43FD144DD45BE068F0AAB7 /* Pods-Hubkit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hubkit.release.xcconfig"; path = "Target Support Files/Pods-Hubkit/Pods-Hubkit.release.xcconfig"; sourceTree = "<group>"; };
 		F3D7C36D22B37D6B0091B829 /* HKSessionRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKSessionRoutes.swift; sourceTree = "<group>"; };
@@ -100,6 +112,9 @@
 		F3D7C37B22B37D6C0091B829 /* HKJwtToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKJwtToken.swift; sourceTree = "<group>"; };
 		F3D7C37C22B37D6C0091B829 /* HKApiKeyToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKApiKeyToken.swift; sourceTree = "<group>"; };
 		F3D7C37D22B37D6C0091B829 /* HKFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKFile.swift; sourceTree = "<group>"; };
+		F3D7C39222B38EAC0091B829 /* HubkitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HubkitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3D7C39422B38EAC0091B829 /* HubkitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubkitTests.swift; sourceTree = "<group>"; };
+		F3D7C39622B38EAC0091B829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +135,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F3D7C38F22B38EAC0091B829 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3D7C39722B38EAC0091B829 /* Hubkit.framework in Frameworks */,
+				3746092A8E87C96C78BD13F5 /* Pods_HubkitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -127,9 +151,9 @@
 			isa = PBXGroup;
 			children = (
 				3D9C42A0227458FA000A6585 /* Sources */,
-				3D9C42A32274595F000A6585 /* Tests */,
 				3D9C43222274629B000A6585 /* Example */,
 				3D9C429B227458E8000A6585 /* Configs */,
+				F3D7C39322B38EAC0091B829 /* HubkitTests */,
 				3D9C429122745894000A6585 /* Products */,
 				7CEE12908A6F666CCDBBCACF /* Pods */,
 				F9D5084CACD9787856856239 /* Frameworks */,
@@ -141,6 +165,7 @@
 			children = (
 				3D9C429022745894000A6585 /* Hubkit.framework */,
 				3D9C43212274629B000A6585 /* Example.app */,
+				F3D7C39222B38EAC0091B829 /* HubkitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,15 +198,6 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		3D9C42A32274595F000A6585 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				3D9C42EC22745FDA000A6585 /* LinuxMain.swift */,
-				3D9C42D722745CDE000A6585 /* HubkitTests.swift */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
 		3D9C43222274629B000A6585 /* Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +225,8 @@
 				2926C23C414B66F684156263 /* Pods-Example.release.xcconfig */,
 				03D1CA0CEEFA680524608F35 /* Pods-Hubkit.debug.xcconfig */,
 				EE43FD144DD45BE068F0AAB7 /* Pods-Hubkit.release.xcconfig */,
+				C55105533559C5FD57A9EE78 /* Pods-HubkitTests.debug.xcconfig */,
+				3F8DEBEBCEC008A6B640C207 /* Pods-HubkitTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -242,11 +260,22 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		F3D7C39322B38EAC0091B829 /* HubkitTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D9C42EC22745FDA000A6585 /* LinuxMain.swift */,
+				F3D7C39422B38EAC0091B829 /* HubkitTests.swift */,
+				F3D7C39622B38EAC0091B829 /* Info.plist */,
+			);
+			path = HubkitTests;
+			sourceTree = "<group>";
+		};
 		F9D5084CACD9787856856239 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				917C533E2CFE0CF4A3AB55AD /* Pods_Example.framework */,
 				DBBD0EE81F92FC3C4CB288AC /* Pods_Hubkit.framework */,
+				843AC70168D361CFD2506044 /* Pods_HubkitTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -305,6 +334,26 @@
 			productReference = 3D9C43212274629B000A6585 /* Example.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F3D7C39122B38EAC0091B829 /* HubkitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3D7C39C22B38EAC0091B829 /* Build configuration list for PBXNativeTarget "HubkitTests" */;
+			buildPhases = (
+				12D4345BF7351691674F086F /* [CP] Check Pods Manifest.lock */,
+				F3D7C38E22B38EAC0091B829 /* Sources */,
+				F3D7C38F22B38EAC0091B829 /* Frameworks */,
+				F3D7C39022B38EAC0091B829 /* Resources */,
+				C6415D6CF2E6BDB00B45F89F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3D7C39922B38EAC0091B829 /* PBXTargetDependency */,
+			);
+			name = HubkitTests;
+			productName = HubkitTests;
+			productReference = F3D7C39222B38EAC0091B829 /* HubkitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -320,6 +369,9 @@
 						LastSwiftMigration = 1020;
 					};
 					3D9C43202274629B000A6585 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					F3D7C39122B38EAC0091B829 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
@@ -338,6 +390,7 @@
 			projectRoot = "";
 			targets = (
 				3D9C428F22745894000A6585 /* Hubkit */,
+				F3D7C39122B38EAC0091B829 /* HubkitTests */,
 				3D9C43202274629B000A6585 /* Example */,
 			);
 		};
@@ -360,6 +413,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F3D7C39022B38EAC0091B829 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -379,6 +439,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		12D4345BF7351691674F086F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HubkitTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -442,6 +524,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C6415D6CF2E6BDB00B45F89F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HubkitTests/Pods-HubkitTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HubkitTests/Pods-HubkitTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HubkitTests/Pods-HubkitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -477,6 +576,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F3D7C38E22B38EAC0091B829 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3D7C39E22B391250091B829 /* HubkitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -484,6 +591,11 @@
 			isa = PBXTargetDependency;
 			target = 3D9C428F22745894000A6585 /* Hubkit */;
 			targetProxy = 3D9C433622746323000A6585 /* PBXContainerItemProxy */;
+		};
+		F3D7C39922B38EAC0091B829 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D9C428F22745894000A6585 /* Hubkit */;
+			targetProxy = F3D7C39822B38EAC0091B829 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -734,6 +846,48 @@
 			};
 			name = Release;
 		};
+		F3D7C39A22B38EAC0091B829 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C55105533559C5FD57A9EE78 /* Pods-HubkitTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W6S4Z2KMUS;
+				INFOPLIST_FILE = HubkitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.surfin.HubkitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3D7C39B22B38EAC0091B829 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F8DEBEBCEC008A6B640C207 /* Pods-HubkitTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W6S4Z2KMUS;
+				INFOPLIST_FILE = HubkitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.surfin.HubkitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -760,6 +914,15 @@
 			buildConfigurations = (
 				3D9C43312274629C000A6585 /* Debug */,
 				3D9C43322274629C000A6585 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3D7C39C22B38EAC0091B829 /* Build configuration list for PBXNativeTarget "HubkitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3D7C39A22B38EAC0091B829 /* Debug */,
+				F3D7C39B22B38EAC0091B829 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

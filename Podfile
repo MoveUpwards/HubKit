@@ -17,3 +17,11 @@ target 'Hubkit' do
   pod 'Offenbach'
   
 end
+
+target 'HubkitTests' do
+  use_frameworks!
+
+  # Pods for testing
+  pod 'Alamofire'
+  pod 'Offenbach'
+end

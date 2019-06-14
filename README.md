@@ -18,13 +18,7 @@
 
 # Hubkit
 
-<p align="center">
-ℹ️ Short description of Hubkit
-</p>
-
-## Features
-
-- [x] ℹ️ Add Hubkit features
+Check https://app.hubkit.cloud
 
 ## Example
 
@@ -76,25 +70,22 @@ import Foundation
 import HubKit
 
 final class HubKitService {
-var account: HKAccount?
+    var account: HKAccount?
 
-init() {
-// Define your environment
-let config = HKConfig(environment: .prod, .v1)
+    init() {
+        // Set your config and api key
+        Hubkit.default
+            .set(project: "YOUR-PROJECT-IDENTIFIER")
+            .set(config: Config(baseURL: plateform.baseUrl))
+            .set(apiKey: HKApiKeyToken(apiKey: "PROJECT-API-KEY"))
 
-// Define your project Api Key
-let apiKey = HKToken(apiKey: "PROJECT-API-KEY")
-
-// Set your config and api key
-HKManager.default.set(config: config).set(token: apiKey).set(project: "YOUR-PROJECT-IDENTIFIER")
-
-// Check the current user
-HKAccount.me(success: { [weak self] account in
-self?.account = account
-}, failure: { error in
-print(error.localizedDescription)
-})
-}
+        // Check the current user
+        Hubkit.me(success: { [weak self] account in
+            self?.account = account
+        }, failure: { error in
+            print(error.localizedDescription)
+        })
+    }
 }
 ```
 

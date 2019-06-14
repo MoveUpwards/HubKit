@@ -10,11 +10,13 @@ let package = Package(
             targets: ["Hubkit"]
         ),
     ],
-    dependencies: [],
+    dependencies: [
+        .package(url: "https://github.com/MoveUpwards/Offenbach.git", from: "1.0.0"),
+    ],
     targets: [
         .target(
             name: "Hubkit",
-            dependencies: [],
+            dependencies: ["Offenbach"],
             path: "Sources"
         ),
         .testTarget(

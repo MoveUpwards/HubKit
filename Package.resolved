@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "163db02519e6f89dcbc57126bd5b17f729b81988",
+          "version": "5.0.0-beta.6"
+        }
+      },
+      {
+        "package": "Offenbach",
+        "repositoryURL": "https://github.com/MoveUpwards/Offenbach.git",
+        "state": {
+          "branch": null,
+          "revision": "410015b40f5be8f9916cb9d017631c9583cbf1de",
+          "version": "1.0.3"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

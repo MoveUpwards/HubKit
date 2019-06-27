@@ -25,7 +25,6 @@ extension HKDevice {
             "manualMode": device.manualMode,
             "sensorType": device.sensorType ?? "",
             "battery": device.battery ?? "",
-            "factoryTest": device.factoryTest ?? "",
             "latitude": device.latitude ?? 0.0,
             "longitude": device.longitude ?? 0.0
         ]

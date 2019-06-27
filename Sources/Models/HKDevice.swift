@@ -16,8 +16,6 @@ public final class HKDevice: Decodable {
     public var externalUUID: String?
     /// The name of the device
     public var name: String?
-    /// The factory test results
-    public var factoryTest: String?
     /// The MAC address of the device
     public var macAddress: String?
     /// The hardware version of the device
@@ -36,13 +34,15 @@ public final class HKDevice: Decodable {
     public var battery: Int?
     /// Is the device being activated
     public var activated: Bool = false
+    /// The device activation date
+    public var activatedAt: Date?
 }
 
 extension HKDevice {
     enum CodingKeys: String, CodingKey {
         case identifier
         case externalUUID = "externalIdentifier"
-        case factoryTest
+        case name
         case macAddress
         case hardwareVersion
         case firmwareVersion
@@ -52,8 +52,10 @@ extension HKDevice {
         case sensorType
         case battery
         case activated
+        case activatedAt = "activatedAt"
     }
 
+    // swiftlint:disable cyclomatic_complexity
     convenience public init(from decoder: Decoder) throws {
         self.init()
 
@@ -63,6 +65,39 @@ extension HKDevice {
         }
         if let externalUUID = try values.decodeIfPresent(String.self, forKey: .externalUUID) {
             self.externalUUID = externalUUID
+        }
+        if let name = try values.decodeIfPresent(String.self, forKey: .name) {
+            self.name = name
+        }
+        if let macAddress = try values.decodeIfPresent(String.self, forKey: .macAddress) {
+            self.macAddress = macAddress
+        }
+        if let hardwareVersion = try values.decodeIfPresent(String.self, forKey: .hardwareVersion) {
+            self.hardwareVersion = hardwareVersion
+        }
+        if let firmwareVersion = try values.decodeIfPresent(String.self, forKey: .firmwareVersion) {
+            self.firmwareVersion = firmwareVersion
+        }
+        if let manualMode = try values.decodeIfPresent(Bool.self, forKey: .manualMode) {
+            self.manualMode = manualMode
+        }
+        if let latitude = try values.decodeIfPresent(Double.self, forKey: .latitude) {
+            self.latitude = latitude
+        }
+        if let longitude = try values.decodeIfPresent(Double.self, forKey: .longitude) {
+            self.longitude = longitude
+        }
+        if let sensorType = try values.decodeIfPresent(String.self, forKey: .sensorType) {
+            self.sensorType = sensorType
+        }
+        if let battery = try values.decodeIfPresent(Int.self, forKey: .battery) {
+            self.battery = battery
+        }
+        if let activated = try values.decodeIfPresent(Bool.self, forKey: .activated) {
+            self.activated = activated
+        }
+        if let activatedAt = try values.decodeIfPresent(Date.self, forKey: .externalUUID) {
+            self.activatedAt = activatedAt
         }
     }
 }

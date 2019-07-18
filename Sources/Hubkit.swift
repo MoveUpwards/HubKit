@@ -12,7 +12,7 @@ import Offenbach
 
 /// Responsible for requesting the HubKit API
 final public class Hubkit: Client {
-    private(set) var project: HKProject? {
+    fileprivate(set) var project: HKProject? {
         didSet {
             guard let project = project else {
                 print("[HubKit] Got no project > ## KO ##")
@@ -33,7 +33,7 @@ final public class Hubkit: Client {
 
     /// Define the authentication token use to sign the API call to HubKit
     @discardableResult
-    public func set(project: String) -> Hubkit {
+    public func set(project: String) -> Self {
         get(action: "projects/\(project)") { [weak self] (result: Result<HKProject, Error>) in
             if case .success(let project) = result {
                 self?.project = project

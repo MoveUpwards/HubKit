@@ -14,7 +14,7 @@ target 'Hubkit' do
   use_frameworks!
 
   # Pods for Hubkit
-  pod 'Offenbach'
+  pod 'Offenbach'#, :path => '~/Projects/MoveUpwards/Offenbach'
   
 end
 
@@ -22,6 +22,6 @@ target 'HubkitTests' do
   use_frameworks!
 
   # Pods for testing
-  pod 'Alamofire'
-  pod 'Offenbach'
+  pod 'Alamofire', '5.0.0-beta.7'
+  pod 'Offenbach'#, :path => '~/Projects/MoveUpwards/Offenbach'
 end

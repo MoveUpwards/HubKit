@@ -1,10 +1,10 @@
 PODS:
-  - Alamofire (5.0.0-beta.6)
-  - Offenbach (1.0.2):
+  - Alamofire (5.0.0-beta.7)
+  - Offenbach (1.0.5):
     - Alamofire (~> 5.0.0-beta.6)
 
 DEPENDENCIES:
-  - Alamofire
+  - Alamofire (= 5.0.0-beta.7)
   - Offenbach
 
 SPEC REPOS:
@@ -13,9 +13,9 @@ SPEC REPOS:
     - Offenbach
 
 SPEC CHECKSUMS:
-  Alamofire: cd08a4402bd12cacd0c66f23fb12fec8d6b965e4
-  Offenbach: 6a0227770de1257a641476026f5865d2e2f34c2c
+  Alamofire: bd07938ceecad59d2492aeecb1f785a8f2721160
+  Offenbach: 8c0b8c461ab72edfbcbc461e944843e297d911a0
 
-PODFILE CHECKSUM: 7dde2693c7d3dbe9bf491260c19b6c0feeb0c2ba
+PODFILE CHECKSUM: 9ba7944295e1be59a413e80e69c910819d5dbc92
 
-COCOAPODS: 1.7.2
+COCOAPODS: 1.7.5

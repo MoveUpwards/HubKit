@@ -96,7 +96,7 @@ extension HKDevice {
         if let activated = try values.decodeIfPresent(Bool.self, forKey: .activated) {
             self.activated = activated
         }
-        if let activatedAt = try values.decodeIfPresent(Date.self, forKey: .externalUUID) {
+        if let activatedAt = try values.decodeIfPresent(Date.self, forKey: .activatedAt) {
             self.activatedAt = activatedAt
         }
     }

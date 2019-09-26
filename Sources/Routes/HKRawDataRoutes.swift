@@ -20,14 +20,14 @@ extension HKRawData {
             "session": session.identifier,
             "device": device.identifier
         ]
-
+        
         Hubkit.default.upload(action: "raw_datas",
-                                 parameters: parameters,
-                                 file: file,
-                                 progress: progress,
-                                 completion: completion)
+                              parameters: parameters,
+                              files: [file],
+                              progress: progress,
+                              completion: completion)
     }
-
+    
     /// Get the raw data for the given identifier
     public static func get<T: Decodable>(identifier: String, completion: @escaping (Result<T, Error>) -> Void) {
         Hubkit.default.get(action: "raw_datas/\(identifier)", completion: completion)

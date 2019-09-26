@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                      = "HubKit"
-  s.version                   = "1.0.3"
+  s.version                   = "1.0.4"
   s.summary                   = "HubKit Framework"
   s.homepage                  = "https://github.com/MoveUpwards/HubKit.git"
   s.license                   = { :type => "MIT", :file => "LICENSE" }

@@ -34,6 +34,7 @@
 		F3D7C38D22B37D6C0091B829 /* HKFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7C37D22B37D6C0091B829 /* HKFile.swift */; };
 		F3D7C39722B38EAC0091B829 /* Hubkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* Hubkit.framework */; };
 		F3D7C39E22B391250091B829 /* HubkitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7C39422B38EAC0091B829 /* HubkitTests.swift */; };
+		F3E1AFDA233E625C00002D6F /* HKMultiPartProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E1AFD9233E625C00002D6F /* HKMultiPartProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,7 @@
 		F3D7C39222B38EAC0091B829 /* HubkitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HubkitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D7C39422B38EAC0091B829 /* HubkitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubkitTests.swift; sourceTree = "<group>"; };
 		F3D7C39622B38EAC0091B829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3E1AFD9233E625C00002D6F /* HKMultiPartProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKMultiPartProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +268,7 @@
 				F3D7C37B22B37D6C0091B829 /* HKJwtToken.swift */,
 				F3D7C37C22B37D6C0091B829 /* HKApiKeyToken.swift */,
 				F3D7C37D22B37D6C0091B829 /* HKFile.swift */,
+				F3E1AFD9233E625C00002D6F /* HKMultiPartProtocol.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -562,6 +565,7 @@
 				F3D7C38022B37D6C0091B829 /* HKRawDataRoutes.swift in Sources */,
 				F3D7C38222B37D6C0091B829 /* HKActivityRoutes.swift in Sources */,
 				F3D7C38122B37D6C0091B829 /* HKTokenRoutes.swift in Sources */,
+				F3E1AFDA233E625C00002D6F /* HKMultiPartProtocol.swift in Sources */,
 				F3D7C37E22B37D6C0091B829 /* HKSessionRoutes.swift in Sources */,
 				F3D7C38A22B37D6C0091B829 /* HKRawData.swift in Sources */,
 			);
@@ -759,7 +763,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = " 1.0.4";
+				MARKETING_VERSION = " 1.0.5";
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.moveupwards.Hubkit-iOS";
 				PRODUCT_NAME = Hubkit;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -792,7 +796,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = " 1.0.4";
+				MARKETING_VERSION = " 1.0.5";
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.moveupwards.Hubkit-iOS";
 				PRODUCT_NAME = Hubkit;
 				PROVISIONING_PROFILE_SPECIFIER = "";

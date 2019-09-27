@@ -13,7 +13,7 @@ extension HKRawData {
     /// Create a new session
     public static func create<T: Decodable>(in session: HKSession,
                                             _ device: HKDevice,
-                                            _ file: HKFile,
+                                            _ file: HKMultiPart,
                                             progress: @escaping (Double) -> Void,
                                             completion: @escaping (Result<T, Error>) -> Void) {
         let parameters: Parameters = [

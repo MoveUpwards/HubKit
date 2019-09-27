@@ -1,6 +1,6 @@
 PODS:
   - Alamofire (5.0.0-beta.7)
-  - Offenbach (1.0.8):
+  - Offenbach (1.0.9):
     - Alamofire (= 5.0.0-beta.7)
 
 DEPENDENCIES:
@@ -8,14 +8,14 @@ DEPENDENCIES:
   - Offenbach
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Alamofire
     - Offenbach
 
 SPEC CHECKSUMS:
   Alamofire: bd07938ceecad59d2492aeecb1f785a8f2721160
-  Offenbach: bda03dac9d8fd43ac98a386b26c6415c93b20b7c
+  Offenbach: 3dcb088fac7123e076d3cea59668def4d34a06c3
 
 PODFILE CHECKSUM: 9ba7944295e1be59a413e80e69c910819d5dbc92
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.1

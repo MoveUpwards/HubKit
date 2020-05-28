@@ -9,7 +9,7 @@
 import Foundation
 
 /// A container grouping a set of Session representing measurement campaigns.
-final public class HKProject: Decodable {
+final public class HKProject: Codable {
     /// The unique identifier
     public var identifier: String = ""
     /// The project name

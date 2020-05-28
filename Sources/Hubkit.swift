@@ -29,12 +29,12 @@ final public class Hubkit: Client {
 
     public static let `default` = Hubkit()
 
-    internal required init() { }
+    internal required override init() { }
 
     /// Define the authentication token use to sign the API call to HubKit
     @discardableResult
     public func set(project: String) -> Self {
-        get(action: "projects/\(project)") { [weak self] (result: Result<HKProject, Error>) in
+        get(action: "projects/\(project)") { [weak self] (result: Result<HKProject, AFError>) in
             if case .success(let project) = result {
                 self?.project = project
             }

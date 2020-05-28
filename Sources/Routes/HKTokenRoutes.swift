@@ -12,15 +12,15 @@ extension HKJwtToken {
     /// Authenticate a user and get a HKToken with a jwt token
     public static func authenticate<T: Decodable>(username: String,
                                                   password: String,
-                                                  completion: @escaping (Result<T, Error>) -> Void) {
-        let parameters: Parameters = [
+                                                  completion: @escaping (Result<T, AFError>) -> Void) {
+        let parameters: [String: String] = [
             "_username": username,
             "_password": password
         ]
 
         Hubkit.default.post(action: "login_check",
                                parameters: parameters,
-                               encoder: URLEncoding.default,
+                               encoder: URLEncodedFormParameterEncoder.default,
                                completion: completion)
     }
 

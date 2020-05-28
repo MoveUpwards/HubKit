@@ -15,7 +15,7 @@ extension HKRawData {
                                             _ device: HKDevice,
                                             _ file: HKMultiPart,
                                             progress: @escaping (Double) -> Void,
-                                            completion: @escaping (Result<T, Error>) -> Void) {
+                                            completion: @escaping (Result<T, AFError>) -> Void) {
         let parameters: Parameters = [
             "session": session.identifier,
             "device": device.identifier
@@ -29,7 +29,7 @@ extension HKRawData {
     }
     
     /// Get the raw data for the given identifier
-    public static func get<T: Decodable>(identifier: String, completion: @escaping (Result<T, Error>) -> Void) {
+    public static func get<T: Decodable>(identifier: String, completion: @escaping (Result<T, AFError>) -> Void) {
         Hubkit.default.get(action: "raw_datas/\(identifier)", completion: completion)
     }
 }

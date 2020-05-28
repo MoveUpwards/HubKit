@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.2
 
 import PackageDescription
 
@@ -6,6 +6,7 @@ let package = Package(
     name: "Hubkit",
     platforms: [
         .iOS(.v10),
+        .macOS(.v10_12)
     ],
     products: [
         .library(
@@ -14,7 +15,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/MoveUpwards/Offenbach.git", from: "1.0.0"),
+        .package(url: "https://github.com/MoveUpwards/Offenbach.git", from: "2.0.0"),
     ],
     targets: [
         .target(

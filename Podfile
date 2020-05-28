@@ -1,3 +1,5 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
 # Uncomment the next line to define a global platform for your project
 platform :ios, '10.0'
 
@@ -22,6 +24,5 @@ target 'HubkitTests' do
   use_frameworks!
 
   # Pods for testing
-  pod 'Alamofire', '5.0.0-beta.7'
   pod 'Offenbach'#, :path => '~/Projects/MoveUpwards/Offenbach'
 end

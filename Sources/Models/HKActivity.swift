@@ -9,7 +9,7 @@
 import Foundation
 
 /// HKActivity represents an activity a session can be associated with
-final public class HKActivity: Decodable {
+final public class HKActivity: Codable {
     /// The unique identifier
     public var identifier: String = ""
     /// The activity name

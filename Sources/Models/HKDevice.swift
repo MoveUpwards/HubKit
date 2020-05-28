@@ -9,7 +9,7 @@
 import Foundation
 
 /// A physical device containing a set of electronic components for measurements (Sensors)
-public final class HKDevice: Decodable {
+public final class HKDevice: Codable {
     /// The unique identifier
     public var identifier: String = ""
     /// The name of the device

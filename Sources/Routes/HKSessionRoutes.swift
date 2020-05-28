@@ -14,23 +14,19 @@ extension HKSession {
     public static func create<T: Decodable>(in project: HKProject,
                                             _ metas: [String: Any],
                                             _ capturedAt: Date,
-                                            completion: @escaping (Result<T, Error>) -> Void) {
-        let parameters: Parameters = [
-            "project": project.identifier,
-            "metas": metas,
-            "capturedAt": capturedAt.timeIntervalSince1970
-        ]
-
-        Hubkit.default.post(action: "sessions", parameters: parameters, completion: completion)
+                                            completion: @escaping (Result<T, AFError>) -> Void) {
+        Hubkit.default.post(action: "sessions", parameters: project, completion: completion)
     }
 
     /// Get the session for the given identifier
-    public static func get<T: Decodable>(identifier: String, completion: @escaping (Result<T, Error>) -> Void) {
-        Hubkit.default.get(action: "sessions/\(identifier)", completion: completion)
+    public static func get<T: Decodable>(identifier: String, completion: @escaping (Result<T, AFError>) -> Void) {
+        let parameters: [String: String] = [:]
+        Hubkit.default.get(action: "sessions/\(identifier)", parameters: parameters, completion: completion)
     }
 
     /// Change a session state to ready
-    public func ready<T: Decodable>(completion: @escaping (Result<T, Error>) -> Void) {
-        Hubkit.default.patch(action: "sessions/\(identifier)/ready", completion: completion)
+    public func ready<T: Decodable>(completion: @escaping (Result<T, AFError>) -> Void) {
+        let parameters: [String: String] = [:]
+        Hubkit.default.patch(action: "sessions/\(identifier)/ready", parameters: parameters, completion: completion)
     }
 }

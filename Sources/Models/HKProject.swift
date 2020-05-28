@@ -9,7 +9,7 @@
 import Foundation
 
 /// A container grouping a set of Session representing measurement campaigns.
-final public class HKProject: Codable {
+final public class HKProject: Decodable {
     /// The unique identifier
     public var identifier: String = ""
     /// The project name
@@ -45,4 +45,9 @@ extension HKProject {
             self.devices = devices
         }
     }
+}
+
+struct HKProjectParameters: Encodable {
+    let project: String
+    let capturedAt: TimeInterval
 }

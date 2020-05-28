@@ -9,7 +9,7 @@
 import Foundation
 
 /// A physical device containing a set of electronic components for measurements (Sensors)
-public final class HKDevice: Codable {
+public final class HKDevice: Decodable {
     /// The unique identifier
     public var identifier: String = ""
     /// The name of the device
@@ -100,4 +100,16 @@ extension HKDevice {
             self.activatedAt = activatedAt
         }
     }
+}
+
+struct HKDeviceParameters: Encodable {
+    let name: String
+    let macAddress: String
+    let hardwareVersion: String
+    let firmwareVersion: String
+    let manualMode: Bool
+    let sensorType: String
+    let battery: Int
+    let latitude: Double
+    let longitude: Double
 }

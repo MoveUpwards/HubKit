@@ -15,7 +15,8 @@ extension HKSession {
                                             _ metas: [String: Any],
                                             _ capturedAt: Date,
                                             completion: @escaping (Result<T, AFError>) -> Void) {
-        Hubkit.default.post(action: "sessions", parameters: project, completion: completion)
+        let parameters = HKProjectParameters(project: project.identifier, capturedAt: capturedAt.timeIntervalSince1970)
+        Hubkit.default.post(action: "sessions", parameters: parameters, completion: completion)
     }
 
     /// Get the session for the given identifier

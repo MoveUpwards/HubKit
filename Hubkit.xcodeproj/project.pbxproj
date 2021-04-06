@@ -16,25 +16,42 @@
 		3D9C433522746323000A6585 /* Hubkit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* Hubkit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		71A73B70A4DA5918E218B9DE /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B9DD0972B23EC92B9851B0B /* Pods_Example.framework */; };
 		E55E650B141F7FED36050F9A /* Pods_HubkitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E77F05EA816E8D4262C82F8 /* Pods_HubkitTests.framework */; };
-		F3D7C37E22B37D6C0091B829 /* HKSessionRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7C36D22B37D6B0091B829 /* HKSessionRoutes.swift */; };
-		F3D7C37F22B37D6C0091B829 /* HKAccountRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7C36E22B37D6B0091B829 /* HKAccountRoutes.swift */; };
-		F3D7C38022B37D6C0091B829 /* HKRawDataRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7C36F22B37D6B0091B829 /* HKRawDataRoutes.swift */; };
-		F3D7C38122B37D6C0091B829 /* HKTokenRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7C37022B37D6B0091B829 /* HKTokenRoutes.swift */; };
-		F3D7C38222B37D6C0091B829 /* HKActivityRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7C37122B37D6B0091B829 /* HKActivityRoutes.swift */; };
-		F3D7C38322B37D6C0091B829 /* HKDeviceRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7C37222B37D6B0091B829 /* HKDeviceRoutes.swift */; };
 		F3D7C38422B37D6C0091B829 /* Hubkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7C37322B37D6B0091B829 /* Hubkit.swift */; };
-		F3D7C38522B37D6C0091B829 /* HKProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7C37522B37D6C0091B829 /* HKProject.swift */; };
-		F3D7C38622B37D6C0091B829 /* HKAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7C37622B37D6C0091B829 /* HKAccount.swift */; };
-		F3D7C38722B37D6C0091B829 /* HKActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7C37722B37D6C0091B829 /* HKActivity.swift */; };
-		F3D7C38822B37D6C0091B829 /* HKSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7C37822B37D6C0091B829 /* HKSession.swift */; };
-		F3D7C38922B37D6C0091B829 /* HKDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7C37922B37D6C0091B829 /* HKDevice.swift */; };
-		F3D7C38A22B37D6C0091B829 /* HKRawData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7C37A22B37D6C0091B829 /* HKRawData.swift */; };
-		F3D7C38B22B37D6C0091B829 /* HKJwtToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7C37B22B37D6C0091B829 /* HKJwtToken.swift */; };
-		F3D7C38C22B37D6C0091B829 /* HKApiKeyToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7C37C22B37D6C0091B829 /* HKApiKeyToken.swift */; };
-		F3D7C38D22B37D6C0091B829 /* HKFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7C37D22B37D6C0091B829 /* HKFile.swift */; };
 		F3D7C39722B38EAC0091B829 /* Hubkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* Hubkit.framework */; };
 		F3D7C39E22B391250091B829 /* HubkitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7C39422B38EAC0091B829 /* HubkitTests.swift */; };
-		F3E1AFDA233E625C00002D6F /* HKMultiPartProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E1AFD9233E625C00002D6F /* HKMultiPartProtocol.swift */; };
+		F3E9915D261C6D6500A5C48A /* HKActivityRoutes+RxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E99136261C6D6500A5C48A /* HKActivityRoutes+RxSwift.swift */; };
+		F3E9915E261C6D6500A5C48A /* HKAccountRoutes+RxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E99137261C6D6500A5C48A /* HKAccountRoutes+RxSwift.swift */; };
+		F3E9915F261C6D6500A5C48A /* HKDeviceRoutes+RxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E99138261C6D6500A5C48A /* HKDeviceRoutes+RxSwift.swift */; };
+		F3E99160261C6D6500A5C48A /* HKSessionRoutes+RxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E99139261C6D6500A5C48A /* HKSessionRoutes+RxSwift.swift */; };
+		F3E99161261C6D6500A5C48A /* HKRawDataRoutes+RxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E9913A261C6D6500A5C48A /* HKRawDataRoutes+RxSwift.swift */; };
+		F3E99162261C6D6500A5C48A /* HKJwtToken+RxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E9913B261C6D6500A5C48A /* HKJwtToken+RxSwift.swift */; };
+		F3E99163261C6D6500A5C48A /* HKJwtToken+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E9913D261C6D6500A5C48A /* HKJwtToken+Combine.swift */; };
+		F3E99164261C6D6500A5C48A /* HKSessionRoutes+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E9913E261C6D6500A5C48A /* HKSessionRoutes+Combine.swift */; };
+		F3E99165261C6D6500A5C48A /* HKRawDataRoutes+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E9913F261C6D6500A5C48A /* HKRawDataRoutes+Combine.swift */; };
+		F3E99166261C6D6500A5C48A /* HKDeviceRoutes+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E99140261C6D6500A5C48A /* HKDeviceRoutes+Combine.swift */; };
+		F3E99167261C6D6500A5C48A /* HKActivityRoutes+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E99141261C6D6500A5C48A /* HKActivityRoutes+Combine.swift */; };
+		F3E99168261C6D6500A5C48A /* HKAccountRoutes+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E99142261C6D6500A5C48A /* HKAccountRoutes+Combine.swift */; };
+		F3E99169261C6D6500A5C48A /* HKDeviceRoutes+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E99144261C6D6500A5C48A /* HKDeviceRoutes+Model.swift */; };
+		F3E9916A261C6D6500A5C48A /* HKProjectRoutes+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E99145261C6D6500A5C48A /* HKProjectRoutes+Model.swift */; };
+		F3E9916B261C6D6500A5C48A /* HKAccountRoutes+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E99146261C6D6500A5C48A /* HKAccountRoutes+Model.swift */; };
+		F3E9916C261C6D6500A5C48A /* HKSessionRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E99148261C6D6500A5C48A /* HKSessionRoutes.swift */; };
+		F3E9916D261C6D6500A5C48A /* HKJwtTokenRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E99149261C6D6500A5C48A /* HKJwtTokenRoutes.swift */; };
+		F3E9916E261C6D6500A5C48A /* HKAccountRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E9914A261C6D6500A5C48A /* HKAccountRoutes.swift */; };
+		F3E9916F261C6D6500A5C48A /* HKRawDataRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E9914B261C6D6500A5C48A /* HKRawDataRoutes.swift */; };
+		F3E99170261C6D6500A5C48A /* HKActivityRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E9914C261C6D6500A5C48A /* HKActivityRoutes.swift */; };
+		F3E99171261C6D6500A5C48A /* HKDeviceRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E9914D261C6D6500A5C48A /* HKDeviceRoutes.swift */; };
+		F3E99172261C6D6500A5C48A /* HKProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E9914F261C6D6500A5C48A /* HKProject.swift */; };
+		F3E99173261C6D6500A5C48A /* HKJwtToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E99151261C6D6500A5C48A /* HKJwtToken.swift */; };
+		F3E99174261C6D6500A5C48A /* HKApiKeyToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E99152261C6D6500A5C48A /* HKApiKeyToken.swift */; };
+		F3E99175261C6D6500A5C48A /* HKAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E99153261C6D6500A5C48A /* HKAccount.swift */; };
+		F3E99176261C6D6500A5C48A /* HKActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E99154261C6D6500A5C48A /* HKActivity.swift */; };
+		F3E99177261C6D6500A5C48A /* HKSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E99155261C6D6500A5C48A /* HKSession.swift */; };
+		F3E99178261C6D6500A5C48A /* HKDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E99156261C6D6500A5C48A /* HKDevice.swift */; };
+		F3E99179261C6D6500A5C48A /* HKRawData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E99157261C6D6500A5C48A /* HKRawData.swift */; };
+		F3E9917A261C6D6500A5C48A /* HKMultiPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E99158261C6D6500A5C48A /* HKMultiPart.swift */; };
+		F3E9917B261C6D6500A5C48A /* HKFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E99159261C6D6500A5C48A /* HKFile.swift */; };
+		F3E9917C261C6D6500A5C48A /* DefaultValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E9915B261C6D6500A5C48A /* DefaultValue.swift */; };
+		F3E9917D261C6D6500A5C48A /* NullEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E9915C261C6D6500A5C48A /* NullEncodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,26 +114,43 @@
 		80524EB27755B05D52E4A7B4 /* Pods_Hubkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hubkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A4B446946DDBF012882BDD4 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		E0F4B1DCFD05F4DBC9A7EA10 /* Pods-HubkitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HubkitTests.debug.xcconfig"; path = "Target Support Files/Pods-HubkitTests/Pods-HubkitTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F3D7C36D22B37D6B0091B829 /* HKSessionRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKSessionRoutes.swift; sourceTree = "<group>"; };
-		F3D7C36E22B37D6B0091B829 /* HKAccountRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKAccountRoutes.swift; sourceTree = "<group>"; };
-		F3D7C36F22B37D6B0091B829 /* HKRawDataRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKRawDataRoutes.swift; sourceTree = "<group>"; };
-		F3D7C37022B37D6B0091B829 /* HKTokenRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKTokenRoutes.swift; sourceTree = "<group>"; };
-		F3D7C37122B37D6B0091B829 /* HKActivityRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKActivityRoutes.swift; sourceTree = "<group>"; };
-		F3D7C37222B37D6B0091B829 /* HKDeviceRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKDeviceRoutes.swift; sourceTree = "<group>"; };
 		F3D7C37322B37D6B0091B829 /* Hubkit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hubkit.swift; sourceTree = "<group>"; };
-		F3D7C37522B37D6C0091B829 /* HKProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKProject.swift; sourceTree = "<group>"; };
-		F3D7C37622B37D6C0091B829 /* HKAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKAccount.swift; sourceTree = "<group>"; };
-		F3D7C37722B37D6C0091B829 /* HKActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKActivity.swift; sourceTree = "<group>"; };
-		F3D7C37822B37D6C0091B829 /* HKSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKSession.swift; sourceTree = "<group>"; };
-		F3D7C37922B37D6C0091B829 /* HKDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKDevice.swift; sourceTree = "<group>"; };
-		F3D7C37A22B37D6C0091B829 /* HKRawData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKRawData.swift; sourceTree = "<group>"; };
-		F3D7C37B22B37D6C0091B829 /* HKJwtToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKJwtToken.swift; sourceTree = "<group>"; };
-		F3D7C37C22B37D6C0091B829 /* HKApiKeyToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKApiKeyToken.swift; sourceTree = "<group>"; };
-		F3D7C37D22B37D6C0091B829 /* HKFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKFile.swift; sourceTree = "<group>"; };
 		F3D7C39222B38EAC0091B829 /* HubkitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HubkitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D7C39422B38EAC0091B829 /* HubkitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubkitTests.swift; sourceTree = "<group>"; };
 		F3D7C39622B38EAC0091B829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F3E1AFD9233E625C00002D6F /* HKMultiPartProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKMultiPartProtocol.swift; sourceTree = "<group>"; };
+		F3E99136261C6D6500A5C48A /* HKActivityRoutes+RxSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HKActivityRoutes+RxSwift.swift"; sourceTree = "<group>"; };
+		F3E99137261C6D6500A5C48A /* HKAccountRoutes+RxSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HKAccountRoutes+RxSwift.swift"; sourceTree = "<group>"; };
+		F3E99138261C6D6500A5C48A /* HKDeviceRoutes+RxSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HKDeviceRoutes+RxSwift.swift"; sourceTree = "<group>"; };
+		F3E99139261C6D6500A5C48A /* HKSessionRoutes+RxSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HKSessionRoutes+RxSwift.swift"; sourceTree = "<group>"; };
+		F3E9913A261C6D6500A5C48A /* HKRawDataRoutes+RxSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HKRawDataRoutes+RxSwift.swift"; sourceTree = "<group>"; };
+		F3E9913B261C6D6500A5C48A /* HKJwtToken+RxSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HKJwtToken+RxSwift.swift"; sourceTree = "<group>"; };
+		F3E9913D261C6D6500A5C48A /* HKJwtToken+Combine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HKJwtToken+Combine.swift"; sourceTree = "<group>"; };
+		F3E9913E261C6D6500A5C48A /* HKSessionRoutes+Combine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HKSessionRoutes+Combine.swift"; sourceTree = "<group>"; };
+		F3E9913F261C6D6500A5C48A /* HKRawDataRoutes+Combine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HKRawDataRoutes+Combine.swift"; sourceTree = "<group>"; };
+		F3E99140261C6D6500A5C48A /* HKDeviceRoutes+Combine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HKDeviceRoutes+Combine.swift"; sourceTree = "<group>"; };
+		F3E99141261C6D6500A5C48A /* HKActivityRoutes+Combine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HKActivityRoutes+Combine.swift"; sourceTree = "<group>"; };
+		F3E99142261C6D6500A5C48A /* HKAccountRoutes+Combine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HKAccountRoutes+Combine.swift"; sourceTree = "<group>"; };
+		F3E99144261C6D6500A5C48A /* HKDeviceRoutes+Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HKDeviceRoutes+Model.swift"; sourceTree = "<group>"; };
+		F3E99145261C6D6500A5C48A /* HKProjectRoutes+Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HKProjectRoutes+Model.swift"; sourceTree = "<group>"; };
+		F3E99146261C6D6500A5C48A /* HKAccountRoutes+Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HKAccountRoutes+Model.swift"; sourceTree = "<group>"; };
+		F3E99148261C6D6500A5C48A /* HKSessionRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKSessionRoutes.swift; sourceTree = "<group>"; };
+		F3E99149261C6D6500A5C48A /* HKJwtTokenRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKJwtTokenRoutes.swift; sourceTree = "<group>"; };
+		F3E9914A261C6D6500A5C48A /* HKAccountRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKAccountRoutes.swift; sourceTree = "<group>"; };
+		F3E9914B261C6D6500A5C48A /* HKRawDataRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKRawDataRoutes.swift; sourceTree = "<group>"; };
+		F3E9914C261C6D6500A5C48A /* HKActivityRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKActivityRoutes.swift; sourceTree = "<group>"; };
+		F3E9914D261C6D6500A5C48A /* HKDeviceRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKDeviceRoutes.swift; sourceTree = "<group>"; };
+		F3E9914F261C6D6500A5C48A /* HKProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKProject.swift; sourceTree = "<group>"; };
+		F3E99151261C6D6500A5C48A /* HKJwtToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKJwtToken.swift; sourceTree = "<group>"; };
+		F3E99152261C6D6500A5C48A /* HKApiKeyToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKApiKeyToken.swift; sourceTree = "<group>"; };
+		F3E99153261C6D6500A5C48A /* HKAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKAccount.swift; sourceTree = "<group>"; };
+		F3E99154261C6D6500A5C48A /* HKActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKActivity.swift; sourceTree = "<group>"; };
+		F3E99155261C6D6500A5C48A /* HKSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKSession.swift; sourceTree = "<group>"; };
+		F3E99156261C6D6500A5C48A /* HKDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKDevice.swift; sourceTree = "<group>"; };
+		F3E99157261C6D6500A5C48A /* HKRawData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKRawData.swift; sourceTree = "<group>"; };
+		F3E99158261C6D6500A5C48A /* HKMultiPart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKMultiPart.swift; sourceTree = "<group>"; };
+		F3E99159261C6D6500A5C48A /* HKFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKFile.swift; sourceTree = "<group>"; };
+		F3E9915B261C6D6500A5C48A /* DefaultValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultValue.swift; sourceTree = "<group>"; };
+		F3E9915C261C6D6500A5C48A /* NullEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullEncodable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,9 +227,10 @@
 		3D9C42A0227458FA000A6585 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				F3E99134261C6D6500A5C48A /* Extensions */,
+				F3E9914E261C6D6500A5C48A /* Models */,
+				F3E9915A261C6D6500A5C48A /* Wrapper */,
 				F3D7C37322B37D6B0091B829 /* Hubkit.swift */,
-				F3D7C37422B37D6C0091B829 /* Models */,
-				F3D7C36C22B37D6B0091B829 /* Routes */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -243,36 +278,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F3D7C36C22B37D6B0091B829 /* Routes */ = {
-			isa = PBXGroup;
-			children = (
-				F3D7C36D22B37D6B0091B829 /* HKSessionRoutes.swift */,
-				F3D7C36E22B37D6B0091B829 /* HKAccountRoutes.swift */,
-				F3D7C36F22B37D6B0091B829 /* HKRawDataRoutes.swift */,
-				F3D7C37022B37D6B0091B829 /* HKTokenRoutes.swift */,
-				F3D7C37122B37D6B0091B829 /* HKActivityRoutes.swift */,
-				F3D7C37222B37D6B0091B829 /* HKDeviceRoutes.swift */,
-			);
-			path = Routes;
-			sourceTree = "<group>";
-		};
-		F3D7C37422B37D6C0091B829 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				F3D7C37522B37D6C0091B829 /* HKProject.swift */,
-				F3D7C37622B37D6C0091B829 /* HKAccount.swift */,
-				F3D7C37722B37D6C0091B829 /* HKActivity.swift */,
-				F3D7C37822B37D6C0091B829 /* HKSession.swift */,
-				F3D7C37922B37D6C0091B829 /* HKDevice.swift */,
-				F3D7C37A22B37D6C0091B829 /* HKRawData.swift */,
-				F3D7C37B22B37D6C0091B829 /* HKJwtToken.swift */,
-				F3D7C37C22B37D6C0091B829 /* HKApiKeyToken.swift */,
-				F3D7C37D22B37D6C0091B829 /* HKFile.swift */,
-				F3E1AFD9233E625C00002D6F /* HKMultiPartProtocol.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		F3D7C39322B38EAC0091B829 /* HubkitTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +286,100 @@
 				F3D7C39622B38EAC0091B829 /* Info.plist */,
 			);
 			path = HubkitTests;
+			sourceTree = "<group>";
+		};
+		F3E99134261C6D6500A5C48A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F3E99135261C6D6500A5C48A /* Routes+RxSwift */,
+				F3E9913C261C6D6500A5C48A /* Routes+Combine */,
+				F3E99143261C6D6500A5C48A /* Routes+Models */,
+				F3E99147261C6D6500A5C48A /* Routes */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F3E99135261C6D6500A5C48A /* Routes+RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				F3E99136261C6D6500A5C48A /* HKActivityRoutes+RxSwift.swift */,
+				F3E99137261C6D6500A5C48A /* HKAccountRoutes+RxSwift.swift */,
+				F3E99138261C6D6500A5C48A /* HKDeviceRoutes+RxSwift.swift */,
+				F3E99139261C6D6500A5C48A /* HKSessionRoutes+RxSwift.swift */,
+				F3E9913A261C6D6500A5C48A /* HKRawDataRoutes+RxSwift.swift */,
+				F3E9913B261C6D6500A5C48A /* HKJwtToken+RxSwift.swift */,
+			);
+			path = "Routes+RxSwift";
+			sourceTree = "<group>";
+		};
+		F3E9913C261C6D6500A5C48A /* Routes+Combine */ = {
+			isa = PBXGroup;
+			children = (
+				F3E9913D261C6D6500A5C48A /* HKJwtToken+Combine.swift */,
+				F3E9913E261C6D6500A5C48A /* HKSessionRoutes+Combine.swift */,
+				F3E9913F261C6D6500A5C48A /* HKRawDataRoutes+Combine.swift */,
+				F3E99140261C6D6500A5C48A /* HKDeviceRoutes+Combine.swift */,
+				F3E99141261C6D6500A5C48A /* HKActivityRoutes+Combine.swift */,
+				F3E99142261C6D6500A5C48A /* HKAccountRoutes+Combine.swift */,
+			);
+			path = "Routes+Combine";
+			sourceTree = "<group>";
+		};
+		F3E99143261C6D6500A5C48A /* Routes+Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3E99144261C6D6500A5C48A /* HKDeviceRoutes+Model.swift */,
+				F3E99145261C6D6500A5C48A /* HKProjectRoutes+Model.swift */,
+				F3E99146261C6D6500A5C48A /* HKAccountRoutes+Model.swift */,
+			);
+			path = "Routes+Models";
+			sourceTree = "<group>";
+		};
+		F3E99147261C6D6500A5C48A /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				F3E99148261C6D6500A5C48A /* HKSessionRoutes.swift */,
+				F3E99149261C6D6500A5C48A /* HKJwtTokenRoutes.swift */,
+				F3E9914A261C6D6500A5C48A /* HKAccountRoutes.swift */,
+				F3E9914B261C6D6500A5C48A /* HKRawDataRoutes.swift */,
+				F3E9914C261C6D6500A5C48A /* HKActivityRoutes.swift */,
+				F3E9914D261C6D6500A5C48A /* HKDeviceRoutes.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		F3E9914E261C6D6500A5C48A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3E9914F261C6D6500A5C48A /* HKProject.swift */,
+				F3E99150261C6D6500A5C48A /* Security */,
+				F3E99153261C6D6500A5C48A /* HKAccount.swift */,
+				F3E99154261C6D6500A5C48A /* HKActivity.swift */,
+				F3E99155261C6D6500A5C48A /* HKSession.swift */,
+				F3E99156261C6D6500A5C48A /* HKDevice.swift */,
+				F3E99157261C6D6500A5C48A /* HKRawData.swift */,
+				F3E99158261C6D6500A5C48A /* HKMultiPart.swift */,
+				F3E99159261C6D6500A5C48A /* HKFile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F3E99150261C6D6500A5C48A /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				F3E99151261C6D6500A5C48A /* HKJwtToken.swift */,
+				F3E99152261C6D6500A5C48A /* HKApiKeyToken.swift */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		F3E9915A261C6D6500A5C48A /* Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				F3E9915B261C6D6500A5C48A /* DefaultValue.swift */,
+				F3E9915C261C6D6500A5C48A /* NullEncodable.swift */,
+			);
+			path = Wrapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,7 +463,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Move Upwards";
 				TargetAttributes = {
 					3D9C428F22745894000A6585 = {
@@ -551,23 +650,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3D7C38622B37D6C0091B829 /* HKAccount.swift in Sources */,
-				F3D7C38822B37D6C0091B829 /* HKSession.swift in Sources */,
+				F3E9917D261C6D6500A5C48A /* NullEncodable.swift in Sources */,
+				F3E99164261C6D6500A5C48A /* HKSessionRoutes+Combine.swift in Sources */,
+				F3E9916F261C6D6500A5C48A /* HKRawDataRoutes.swift in Sources */,
+				F3E99176261C6D6500A5C48A /* HKActivity.swift in Sources */,
+				F3E9915E261C6D6500A5C48A /* HKAccountRoutes+RxSwift.swift in Sources */,
 				F3D7C38422B37D6C0091B829 /* Hubkit.swift in Sources */,
-				F3D7C38B22B37D6C0091B829 /* HKJwtToken.swift in Sources */,
-				F3D7C38922B37D6C0091B829 /* HKDevice.swift in Sources */,
-				F3D7C38C22B37D6C0091B829 /* HKApiKeyToken.swift in Sources */,
-				F3D7C38522B37D6C0091B829 /* HKProject.swift in Sources */,
-				F3D7C38722B37D6C0091B829 /* HKActivity.swift in Sources */,
-				F3D7C37F22B37D6C0091B829 /* HKAccountRoutes.swift in Sources */,
-				F3D7C38322B37D6C0091B829 /* HKDeviceRoutes.swift in Sources */,
-				F3D7C38D22B37D6C0091B829 /* HKFile.swift in Sources */,
-				F3D7C38022B37D6C0091B829 /* HKRawDataRoutes.swift in Sources */,
-				F3D7C38222B37D6C0091B829 /* HKActivityRoutes.swift in Sources */,
-				F3D7C38122B37D6C0091B829 /* HKTokenRoutes.swift in Sources */,
-				F3E1AFDA233E625C00002D6F /* HKMultiPartProtocol.swift in Sources */,
-				F3D7C37E22B37D6C0091B829 /* HKSessionRoutes.swift in Sources */,
-				F3D7C38A22B37D6C0091B829 /* HKRawData.swift in Sources */,
+				F3E99175261C6D6500A5C48A /* HKAccount.swift in Sources */,
+				F3E9915F261C6D6500A5C48A /* HKDeviceRoutes+RxSwift.swift in Sources */,
+				F3E9916B261C6D6500A5C48A /* HKAccountRoutes+Model.swift in Sources */,
+				F3E99171261C6D6500A5C48A /* HKDeviceRoutes.swift in Sources */,
+				F3E99179261C6D6500A5C48A /* HKRawData.swift in Sources */,
+				F3E99169261C6D6500A5C48A /* HKDeviceRoutes+Model.swift in Sources */,
+				F3E9916C261C6D6500A5C48A /* HKSessionRoutes.swift in Sources */,
+				F3E99161261C6D6500A5C48A /* HKRawDataRoutes+RxSwift.swift in Sources */,
+				F3E9916A261C6D6500A5C48A /* HKProjectRoutes+Model.swift in Sources */,
+				F3E99177261C6D6500A5C48A /* HKSession.swift in Sources */,
+				F3E9916E261C6D6500A5C48A /* HKAccountRoutes.swift in Sources */,
+				F3E99173261C6D6500A5C48A /* HKJwtToken.swift in Sources */,
+				F3E99174261C6D6500A5C48A /* HKApiKeyToken.swift in Sources */,
+				F3E99172261C6D6500A5C48A /* HKProject.swift in Sources */,
+				F3E99178261C6D6500A5C48A /* HKDevice.swift in Sources */,
+				F3E9917A261C6D6500A5C48A /* HKMultiPart.swift in Sources */,
+				F3E99168261C6D6500A5C48A /* HKAccountRoutes+Combine.swift in Sources */,
+				F3E99170261C6D6500A5C48A /* HKActivityRoutes.swift in Sources */,
+				F3E99163261C6D6500A5C48A /* HKJwtToken+Combine.swift in Sources */,
+				F3E99160261C6D6500A5C48A /* HKSessionRoutes+RxSwift.swift in Sources */,
+				F3E99162261C6D6500A5C48A /* HKJwtToken+RxSwift.swift in Sources */,
+				F3E9917B261C6D6500A5C48A /* HKFile.swift in Sources */,
+				F3E9915D261C6D6500A5C48A /* HKActivityRoutes+RxSwift.swift in Sources */,
+				F3E99165261C6D6500A5C48A /* HKRawDataRoutes+Combine.swift in Sources */,
+				F3E99166261C6D6500A5C48A /* HKDeviceRoutes+Combine.swift in Sources */,
+				F3E9916D261C6D6500A5C48A /* HKJwtTokenRoutes.swift in Sources */,
+				F3E9917C261C6D6500A5C48A /* DefaultValue.swift in Sources */,
+				F3E99167261C6D6500A5C48A /* HKActivityRoutes+Combine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,6 +757,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -667,7 +784,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -707,6 +824,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -727,7 +845,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -756,7 +874,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Configs/Hubkit.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -789,7 +907,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Configs/Hubkit.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -816,7 +934,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W6S4Z2KMUS;
 				INFOPLIST_FILE = Example/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -839,7 +957,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W6S4Z2KMUS;
 				INFOPLIST_FILE = Example/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -859,7 +977,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W6S4Z2KMUS;
 				INFOPLIST_FILE = HubkitTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -880,7 +998,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W6S4Z2KMUS;
 				INFOPLIST_FILE = HubkitTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

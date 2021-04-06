@@ -18,7 +18,7 @@ extension HKRawData {
     public static func create(in session: HKSession,
                               _ device: HKDevice,
                               _ file: HKMultiPart,
-                              progress: ((Double) -> Void)? = nil) -> AnyPublisher<Self, Error> {
+                              progress: @escaping (Double) -> Void) -> AnyPublisher<Self, Error> {
         Future<Self, Error> { promise in
             create(in: session, device, file, progress: progress) { (result: Result<Self, AFError>) in
                 promise(result.mapError({ $0 as Error }))

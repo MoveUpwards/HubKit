@@ -16,7 +16,7 @@ target 'Hubkit' do
   use_frameworks!
 
   # Pods for Hubkit
-  pod 'Offenbach'#, :path => '~/Projects/MoveUpwards/Offenbach'
+  pod 'Offenbach', :path => '~/Development/moveUpwards/Offenbach'
   pod 'RxSwift'
   
 end
@@ -25,6 +25,6 @@ target 'HubkitTests' do
   use_frameworks!
 
   # Pods for testing
-  pod 'Offenbach'#, :path => '~/Projects/MoveUpwards/Offenbach'
+  pod 'Offenbach', :path => '~/Development/moveUpwards/Offenbach'
   pod 'RxSwift'
 end

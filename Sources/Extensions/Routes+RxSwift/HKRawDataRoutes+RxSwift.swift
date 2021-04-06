@@ -15,7 +15,7 @@ extension HKRawData {
     public static func create(in session: HKSession,
                               _ device: HKDevice,
                               _ file: HKMultiPart,
-                              progress: ((Double) -> Void)? = nil) -> Single<Self> {
+                              progress: @escaping (Double) -> Void) -> Single<Self> {
         Single<Self>.create(subscribe: { single in
             let request = create(in: session, device, file, progress: progress) { (result: Result<Self, AFError>) in
                 single(result.mapError({ $0 as Error }))

@@ -1,24 +1,27 @@
 PODS:
-  - Alamofire (5.2.1)
-  - Offenbach (2.1.1):
+  - Alamofire (5.4.2)
+  - Offenbach (2.2.4):
     - Alamofire
-  - RxSwift (6.0.0)
+  - RxSwift (6.1.0)
 
 DEPENDENCIES:
-  - Offenbach
+  - Offenbach (from `~/Development/moveUpwards/Offenbach`)
   - RxSwift
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
-    - Offenbach
     - RxSwift
 
-SPEC CHECKSUMS:
-  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
-  Offenbach: f19263f8b81d92ac1c7a91b43e6eda39d6fe5c31
-  RxSwift: c14e798c59b9f6e9a2df8fd235602e85cc044295
+EXTERNAL SOURCES:
+  Offenbach:
+    :path: "~/Development/moveUpwards/Offenbach"
 
-PODFILE CHECKSUM: fa2ca68ffbe6c18ef5f816023c42f727d09e82af
+SPEC CHECKSUMS:
+  Alamofire: bfbc4c2fe5909b1d94fb4ef2277c6b3727ef5dae
+  Offenbach: bda97ac2493a7c76f30c1b6d746ec7bc3138b9f4
+  RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
+
+PODFILE CHECKSUM: 3e24c5e358cea0305e3fda8c85e5a036136ab446
 
 COCOAPODS: 1.10.1

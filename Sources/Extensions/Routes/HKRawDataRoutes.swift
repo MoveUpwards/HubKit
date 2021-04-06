@@ -15,7 +15,7 @@ extension HKRawData {
     public static func create(in session: HKSession,
                               _ device: HKDevice,
                               _ file: HKMultiPart,
-                              progress: ((Double) -> Void)? = nil,
+                              progress: @escaping (Double) -> Void,
                               completion: @escaping (Result<Self, AFError>) -> Void) -> DataRequest? {
         let parameters: Parameters = [
             "session": session.id,

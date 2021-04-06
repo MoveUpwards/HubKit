@@ -1,13 +1,11 @@
 opt_in_rules: # some rules are only opt-in
   - empty_count
   - redundant_nil_coalescing
-  - switch_case_on_newline
   - force_unwrapping
   - conditional_returns_on_newline
   - closure_spacing
   - implicitly_unwrapped_optional
   - sorted_imports
-  - valid_docs
   - nslocalizedstring_require_bundle
 
 included:
@@ -19,3 +17,6 @@ excluded: # paths to ignore during linting. Takes precedence over `included`.
 
 disabled_rules: # rule identifiers to exclude from running
   - trailing_whitespace
+  - identifier_name
+  - redundant_optional_initialization
+  - nesting

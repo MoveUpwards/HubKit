@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
         "state": {
           "branch": null,
-          "revision": "a6241748b5c5f38ca53fa8286788d2f90fa9c666",
-          "version": "5.0.0-beta.7"
+          "revision": "4d19ad82f80cc71ff829b941ded114c56f4f604c",
+          "version": "5.4.2"
         }
       },
       {
@@ -15,8 +15,17 @@
         "repositoryURL": "https://github.com/MoveUpwards/Offenbach.git",
         "state": {
           "branch": null,
-          "revision": "7ec0a394065d689348740a1535604fba89417d46",
-          "version": "1.2.0"
+          "revision": "8ab924bd8f4f2d272ef55895cd8d3fd074b90702",
+          "version": "2.2.4"
+        }
+      },
+      {
+        "package": "RxSwift",
+        "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "7e01c05f25c025143073eaa3be3532f9375c614b",
+          "version": "6.1.0"
         }
       }
     ]

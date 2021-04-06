@@ -9,34 +9,35 @@
 import Foundation
 
 /// An authenticated user account representation
-final public class HKAccount: Decodable {
+public struct HKAccount: Codable {
     /// The unique identifier
-    public var identifier: String = ""
+    public let id: String
+
     /// The authenticated user email adress
-    public var email: String?
+    public let email: String
+
     /// The authenticated user projects
-    public var projects = [HKProject]()
+    public let projects: [HKProject]
+
+    public init(id: String = UUID().uuidString, email: String, projects: [HKProject] = []) {
+        self.id = id
+        self.email = email
+        self.projects = projects
+    }
 }
 
 extension HKAccount {
     enum CodingKeys: String, CodingKey {
-        case identifier
+        case id = "identifier"
         case email
         case projects
     }
+}
 
-    convenience public init(from decoder: Decoder) throws {
-        self.init()
+extension HKAccount: Identifiable {}
 
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        if let identifier = try values.decodeIfPresent(String.self, forKey: .identifier) {
-            self.identifier = identifier
-        }
-        if let email = try values.decodeIfPresent(String.self, forKey: .email) {
-            self.email = email
-        }
-        if let projects = try values.decodeIfPresent([HKProject].self, forKey: .projects) {
-            self.projects = projects
-        }
+extension HKAccount: CustomStringConvertible {
+    public var description: String {
+        "<HKAccount id: \(id), email: \(email)>"
     }
 }

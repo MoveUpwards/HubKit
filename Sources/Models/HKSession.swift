@@ -9,46 +9,37 @@
 import Foundation
 
 /// A measurement campaign over a given time interval with one or more Devices
-final public class HKSession: Decodable {
+public struct HKSession: Decodable {
     /// The unique identifier
-    public var identifier: String = ""
+    public let id: String
+
     /// The state ot the session
-    public var state: String?
+    public let state: String?
+
     /// The project unique identifier the session is linked to
-    public var project: String?
+    public let project: String?
+
     /// The project unique identifier the session is linked to
-    public var metas: String?
+    public let metas: String?
+
     /// The session captured date
-    public var capturedAt: Date?
+    public let capturedAt: Date?
 }
 
 extension HKSession {
     enum CodingKeys: String, CodingKey {
-        case identifier
+        case id = "identifier"
         case state
         case project
         case metas
         case capturedAt
     }
+}
 
-    convenience public init(from decoder: Decoder) throws {
-        self.init()
+extension HKSession: Identifiable {}
 
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        if let identifier = try values.decodeIfPresent(String.self, forKey: .identifier) {
-            self.identifier = identifier
-        }
-        if let state = try values.decodeIfPresent(String.self, forKey: .state) {
-            self.state = state
-        }
-        if let project = try values.decodeIfPresent(String.self, forKey: .project) {
-            self.project = project
-        }
-        if let metas = try values.decodeIfPresent(String.self, forKey: .metas) {
-            self.metas = metas
-        }
-        if let capturedAt = try values.decodeIfPresent(Date.self, forKey: .capturedAt) {
-            self.capturedAt = capturedAt
-        }
+extension HKSession: CustomStringConvertible {
+    public var description: String {
+        "<HKSession id: \(id)>"
     }
 }

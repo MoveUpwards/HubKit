@@ -19,15 +19,15 @@ final public class Hubkit: Client {
                 return
             }
 
-            print("[HubKit] Got project > \(project.identifier)")
+            print("[HubKit] Got project > \(project.id)")
         }
     }
 
     public var devices: [HKDevice] {
-        return project?.devices ?? []
+        project?.devices ?? []
     }
 
-    public static let `default` = Hubkit()
+    public static let shared = Hubkit()
 
     internal required override init() { }
 

@@ -17,6 +17,7 @@ target 'Hubkit' do
 
   # Pods for Hubkit
   pod 'Offenbach'#, :path => '~/Projects/MoveUpwards/Offenbach'
+  pod 'RxSwift'
   
 end
 
@@ -25,4 +26,5 @@ target 'HubkitTests' do
 
   # Pods for testing
   pod 'Offenbach'#, :path => '~/Projects/MoveUpwards/Offenbach'
+  pod 'RxSwift'
 end

@@ -11,7 +11,8 @@ import Foundation
 
 extension HKAccount {
     /// Get the current authenticated user
-    public static func me<T: Decodable>(completion: @escaping (Result<T, AFError>) -> Void) {
-        Hubkit.default.get(action: "me", completion: completion)
+    @discardableResult
+    public static func me(completion: @escaping (Result<Self, AFError>) -> Void) -> DataRequest? {
+        Hubkit.shared.get(action: "me", completion: completion)
     }
 }

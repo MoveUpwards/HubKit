@@ -9,28 +9,30 @@
 import Foundation
 
 /// HKActivity represents an activity a session can be associated with
-final public class HKActivity: Decodable {
+public struct HKActivity: Codable {
     /// The unique identifier
-    public var identifier: String = ""
+    public let id: String
+
     /// The activity name
-    public var name: String?
+    public let name: String
+
+    public init(id: String = UUID().uuidString, name: String) {
+        self.id = id
+        self.name = name
+    }
 }
 
 extension HKActivity {
     enum CodingKeys: String, CodingKey {
-        case identifier
+        case id = "identifier"
         case name
     }
+}
 
-    convenience public init(from decoder: Decoder) throws {
-        self.init()
+extension HKActivity: Identifiable {}
 
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        if let identifier = try values.decodeIfPresent(String.self, forKey: .identifier) {
-            self.identifier = identifier
-        }
-        if let name = try values.decodeIfPresent(String.self, forKey: .name) {
-            self.name = name
-        }
+extension HKActivity: CustomStringConvertible {
+    public var description: String {
+        "<HKActivity id: \(id), name: \(name)>"
     }
 }

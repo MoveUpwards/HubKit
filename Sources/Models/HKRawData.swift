@@ -9,34 +9,35 @@
 import Foundation
 
 /// HKRawData represents the data captured by a Sensor
-final public class HKRawData: Decodable {
+public struct HKRawData: Decodable {
     /// The unique identifier
-    public var identifier: String = ""
+    public let id: String
+
     /// The device unique identifier the raw data come from
-    public var device: String?
+    public let device: String?
+
     /// The session unique identifier the raw data is associated with
-    public var session: String?
+    public let session: String?
+
+    public init(id: String = UUID().uuidString, device: String? = nil, session: String? = nil) {
+        self.id = id
+        self.device = device
+        self.session = session
+    }
 }
 
 extension HKRawData {
     enum CodingKeys: String, CodingKey {
-        case identifier
+        case id = "identifier"
         case device
         case session
     }
+}
 
-    convenience public init(from decoder: Decoder) throws {
-        self.init()
+extension HKRawData: Identifiable {}
 
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        if let identifier = try values.decodeIfPresent(String.self, forKey: .identifier) {
-            self.identifier = identifier
-        }
-        if let device = try values.decodeIfPresent(String.self, forKey: .device) {
-            self.device = device
-        }
-        if let session = try values.decodeIfPresent(String.self, forKey: .session) {
-            self.session = session
-        }
+extension HKRawData: CustomStringConvertible {
+    public var description: String {
+        "<HKRawData id: \(id)>"
     }
 }

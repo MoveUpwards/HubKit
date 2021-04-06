@@ -12,7 +12,7 @@ import Offenbach
 public struct HKFile: FileProtocol {
     /// The file's local url.
     public var url: URL? {
-        return documentsDirectoryUrl?.appendingPathComponent("\(filename)")
+        documentsDirectoryUrl?.appendingPathComponent("\(filename)")
     }
 
     /// The file's data.
@@ -37,12 +37,21 @@ public struct HKFile: FileProtocol {
     ///     - mimetype: The mimetype of the file.
     ///     - date: The date of the file. Default is now.
 
-    public init(data: Data = Data(), filename: String, mimetype: String, date: Date = Date()) {
+    public init(data: Data = Data(),
+                filename: String = UUID().uuidString,
+                mimetype: String = "application/octect-stream",
+                date: Date = Date()) throws {
         self.data = data
         self.filename = filename
         self.mimetype = mimetype
         self.date = date
 
-        try? save()
+        try save()
+    }
+}
+
+extension HKFile: CustomStringConvertible {
+    public var description: String {
+        "<File url: \(String(describing: url)), name: \(filename), type: \(mimetype), date: \(date)>"
     }
 }

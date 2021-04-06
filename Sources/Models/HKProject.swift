@@ -9,45 +9,40 @@
 import Foundation
 
 /// A container grouping a set of Session representing measurement campaigns.
-final public class HKProject: Decodable {
+public struct HKProject: Codable {
     /// The unique identifier
-    public var identifier: String = ""
+    public let id: String
+
     /// The project name
-    public var name: String?
+    public let name: String
+
     /// The activity unique identifier the session is associated with
-    public var activity: HKActivity?
+    public let activity: HKActivity
+
     /// The project attached devices
-    public var devices = [HKDevice]()
+    public let devices: [HKDevice]
+
+    public init(id: String = UUID().uuidString, name: String, activity: HKActivity, devices: [HKDevice] = []) {
+        self.id = id
+        self.name = name
+        self.activity = activity
+        self.devices = devices
+    }
 }
 
 extension HKProject {
     enum CodingKeys: String, CodingKey {
-        case identifier
+        case id = "identifier"
         case name
         case activity
         case devices
     }
-
-    convenience public init(from decoder: Decoder) throws {
-        self.init()
-
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        if let identifier = try values.decodeIfPresent(String.self, forKey: .identifier) {
-            self.identifier = identifier
-        }
-        if let name = try values.decodeIfPresent(String.self, forKey: .name) {
-            self.name = name
-        }
-        if let activity = try values.decodeIfPresent(HKActivity.self, forKey: .activity) {
-            self.activity = activity
-        }
-        if let devices = try values.decodeIfPresent([HKDevice].self, forKey: .devices) {
-            self.devices = devices
-        }
-    }
 }
 
-struct HKProjectParameters: Encodable {
-    let project: String
-    let capturedAt: TimeInterval
+extension HKProject: Identifiable {}
+
+extension HKProject: CustomStringConvertible {
+    public var description: String {
+        "<HKProject id: \(id), name: \(name), activity: \(activity)>"
+    }
 }

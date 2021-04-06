@@ -9,38 +9,78 @@
 import Foundation
 
 /// A physical device containing a set of electronic components for measurements (Sensors)
-public final class HKDevice: Decodable {
+public struct HKDevice: Codable {
     /// The unique identifier
-    public var identifier: String = ""
+    public let id: String
+
     /// The name of the device
-    public var externalUUID: String?
+    public let externalUUID: String?
+
     /// The name of the device
-    public var name: String?
+    public let name: String?
+
     /// The MAC address of the device
-    public var macAddress: String?
+    public let macAddress: String?
+
     /// The hardware version of the device
-    public var hardwareVersion: String?
+    public let hardwareVersion: String?
+
     /// The firmware version of the device
-    public var firmwareVersion: String?
+    public let firmwareVersion: String?
+
     /// Is the device start recording data manually
-    public var manualMode: Bool = false
+    public let manualMode: Bool
+
     /// The latitude of the device position
-    public var latitude: Double?
+    public let latitude: Double?
+
     /// The longitude of the device position
-    public var longitude: Double?
+    public let longitude: Double?
+
     /// The device type
-    public var sensorType: String?
+    public let sensorType: String?
+
     /// The device battery level in percentile
-    public var battery: Int?
+    public let battery: Int?
+
     /// Is the device being activated
-    public var activated: Bool = false
+    public let activated: Bool
+
     /// The device activation date
-    public var activatedAt: Date?
+    public let activatedAt: Date?
+
+    public init(id: String = UUID().uuidString,
+                externalUUID: String? = nil,
+                name: String? = nil,
+                macAddress: String? = nil,
+                hardwareVersion: String? = nil,
+                firmwareVersion: String? = nil,
+                latitude: Double? = nil,
+                longitude: Double? = nil,
+                sensorType: String? = nil,
+                battery: Int? = nil,
+                manualMode: Bool = false,
+                activated: Bool = false,
+                activatedAt: Date? = nil) {
+        self.id = id
+        self.externalUUID = externalUUID
+        self.name = name
+        self.macAddress = macAddress
+        self.hardwareVersion = hardwareVersion
+        self.firmwareVersion = firmwareVersion
+        self.latitude = latitude
+        self.longitude = longitude
+        self.sensorType = sensorType
+        self.battery = battery
+        self.manualMode = manualMode
+        self.activated = activated
+        self.activatedAt = activatedAt
+    }
 }
 
 extension HKDevice {
     enum CodingKeys: String, CodingKey {
-        case identifier
+        case id = "identifier"
         case externalUUID = "externalIdentifier"
         case name
         case macAddress
@@ -54,62 +94,12 @@ extension HKDevice {
         case activated
         case activatedAt = "activatedAt"
     }
-
-    // swiftlint:disable cyclomatic_complexity
-    convenience public init(from decoder: Decoder) throws {
-        self.init()
-
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        if let identifier = try values.decodeIfPresent(String.self, forKey: .identifier) {
-            self.identifier = identifier
-        }
-        if let externalUUID = try values.decodeIfPresent(String.self, forKey: .externalUUID) {
-            self.externalUUID = externalUUID
-        }
-        if let name = try values.decodeIfPresent(String.self, forKey: .name) {
-            self.name = name
-        }
-        if let macAddress = try values.decodeIfPresent(String.self, forKey: .macAddress) {
-            self.macAddress = macAddress
-        }
-        if let hardwareVersion = try values.decodeIfPresent(String.self, forKey: .hardwareVersion) {
-            self.hardwareVersion = hardwareVersion
-        }
-        if let firmwareVersion = try values.decodeIfPresent(String.self, forKey: .firmwareVersion) {
-            self.firmwareVersion = firmwareVersion
-        }
-        if let manualMode = try values.decodeIfPresent(Bool.self, forKey: .manualMode) {
-            self.manualMode = manualMode
-        }
-        if let latitude = try values.decodeIfPresent(Double.self, forKey: .latitude) {
-            self.latitude = latitude
-        }
-        if let longitude = try values.decodeIfPresent(Double.self, forKey: .longitude) {
-            self.longitude = longitude
-        }
-        if let sensorType = try values.decodeIfPresent(String.self, forKey: .sensorType) {
-            self.sensorType = sensorType
-        }
-        if let battery = try values.decodeIfPresent(Int.self, forKey: .battery) {
-            self.battery = battery
-        }
-        if let activated = try values.decodeIfPresent(Bool.self, forKey: .activated) {
-            self.activated = activated
-        }
-        if let activatedAt = try values.decodeIfPresent(Date.self, forKey: .activatedAt) {
-            self.activatedAt = activatedAt
-        }
-    }
 }
 
-struct HKDeviceParameters: Encodable {
-    let name: String
-    let macAddress: String
-    let hardwareVersion: String
-    let firmwareVersion: String
-    let manualMode: Bool
-    let sensorType: String
-    let battery: Int
-    let latitude: Double
-    let longitude: Double
+extension HKDevice: Identifiable {}
+
+extension HKDevice: CustomStringConvertible {
+    public var description: String {
+        "<HKDevice id: \(id), activated: \(activated)>"
+    }
 }

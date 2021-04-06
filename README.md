@@ -2,15 +2,6 @@
    <a href="https://developer.apple.com/swift/">
       <img src="https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat" alt="Swift 5.0">
    </a>
-   <a href="http://cocoapods.org/pods/Hubkit">
-      <img src="https://img.shields.io/cocoapods/v/Hubkit.svg?style=flat" alt="Version">
-   </a>
-   <a href="http://cocoapods.org/pods/Hubkit">
-      <img src="https://img.shields.io/cocoapods/p/Hubkit.svg?style=flat" alt="Platform">
-   </a>
-   <a href="https://github.com/Carthage/Carthage">
-      <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage Compatible">
-   </a>
    <a href="https://github.com/apple/swift-package-manager">
       <img src="https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg" alt="SPM">
    </a>
@@ -20,34 +11,7 @@
 
 Check https://app.hubkit.cloud
 
-## Example
-
-The example application is the best way to see `Hubkit` in action. Simply open the `Hubkit.xcodeproj` and run the `Example` scheme.
-
 ## Installation
-
-### CocoaPods
-
-Hubkit is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```bash
-pod 'Hubkit'
-```
-
-### Carthage
-
-[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
-
-To integrate Hubkit into your Xcode project using Carthage, specify it in your `Cartfile`:
-
-```ogdl
-github "Move Upwards/Hubkit"
-```
-
-Run `carthage update` to build the framework and drag the built `Hubkit.framework` into your Xcode project. 
-
-On your application targets’ “Build Phases” settings tab, click the “+” icon and choose “New Run Script Phase” and add the Framework path as mentioned in [Carthage Getting started Step 4, 5 and 6](https://github.com/Carthage/Carthage/blob/master/README.md#if-youre-building-for-ios-tvos-or-watchos)
 
 ### Swift Package Manager
 
@@ -55,7 +19,7 @@ To integrate using Apple's [Swift Package Manager](https://swift.org/package-man
 
 ```swift
 dependencies: [
-    .package(url: "git@github.com:MoveUpwards/HubKit.git.git", from: "1.0.0")
+    .package(url: "https://github.com/MoveUpwards/HubKit.git", from: "1.0.0")
 ]
 ```
 

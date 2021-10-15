@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
         "state": {
           "branch": null,
-          "revision": "a6241748b5c5f38ca53fa8286788d2f90fa9c666",
-          "version": "5.0.0-beta.7"
+          "revision": "d120af1e8638c7da36c8481fd61a66c0c08dc4fc",
+          "version": "5.4.4"
         }
       },
       {
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/MoveUpwards/Offenbach.git",
         "state": {
           "branch": null,
-          "revision": "7ec0a394065d689348740a1535604fba89417d46",
-          "version": "1.2.0"
+          "revision": "d7992ae1d025ce7a2183019fca6908e03f3809e0",
+          "version": "2.4.5"
         }
       }
     ]

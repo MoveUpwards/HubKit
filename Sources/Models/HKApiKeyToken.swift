@@ -10,6 +10,7 @@ import Offenbach
 
 /// An authentication token used to sign API communication
 final public class HKApiKeyToken: TokenProtocol {
+    public var refresh: String?
     /// The authentication token
     public var token: String?
 
